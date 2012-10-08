@@ -44,8 +44,10 @@ setup(
         'plone.api',
         'setuptools',
         'z3c.jbot',
+        'plone.app.referenceablebehavior',
+        'plone.app.relationfield',
+        'plone.namedfile [blobs]',
     ],
-    extras_require={
         'test': [
             'plone.app.testing',
             'plone.app.contenttypes',

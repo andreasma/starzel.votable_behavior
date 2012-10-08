@@ -17,4 +17,18 @@
         directory="static"
         />
 
+    <browser:page
+        name="vote"
+        for="starzel.votable_behavior.interfaces.IVotable"
+        class=".vote.Vote"
+        permission="zope2.View"
+        />
+
+    <browser:page
+        name="clearvotes"
+        for="starzel.votable_behavior.interfaces.IVotable"
+        class=".vote.ClearVotes"
+        permission="zope2.ViewManagementScreens"
+        />
+
 </configure>

@@ -11,6 +11,9 @@
 
     <include package=".browser" />
 
+    <include package=".viewlets" />
+
+    <include package=".behavior" />
 
     <genericsetup:registerProfile
         name="default"
