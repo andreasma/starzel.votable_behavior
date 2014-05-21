@@ -44,6 +44,7 @@ setup(
         'plone.api',
         'setuptools',
         'z3c.jbot',
+        'plone.app.dexterity',
         'plone.app.referenceablebehavior',
         'plone.app.relationfield',
         'plone.namedfile [blobs]',
