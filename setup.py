@@ -33,7 +33,7 @@ setup(
     keywords='Python Plone',
     author='Patrick Gerken',
     author_email='do3cc@patrick-gerken.de',
-    url='http://pypi.python.org/pypi/starzel.votable_behavior',
+    url='https://github.com/collective/starzel.votable_behavior',
     license='GPL',
     packages=find_packages('src', exclude=['ez_setup']),
     namespace_packages=['starzel'],
