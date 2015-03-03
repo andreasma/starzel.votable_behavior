@@ -7,11 +7,19 @@
 
     <includeDependencies package="." />
 
+    <permission
+        id="starzel.votable_behavior.view_vote"
+        title="starzel.votable_behavior: View Vote"
+        />
+
+    <permission
+        id="starzel.votable_behavior.do_vote"
+        title="starzel.votable_behavior: Do Vote"
+        />
+
     <i18n:registerTranslations directory="locales" />
 
     <include package=".browser" />
-
-    <include package=".viewlets" />
 
     <include package=".behavior" />
 

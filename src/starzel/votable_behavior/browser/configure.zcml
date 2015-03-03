@@ -17,9 +17,20 @@
         directory="static"
         />
 
+    <browser:viewlet
+        name="voting"
+        for="starzel.votable_behavior.interfaces.IVotable"
+        manager="plone.app.layout.viewlets.interfaces.IBelowContentTitle"
+        template="templates/voting_viewlet.pt"
+        layer="..interfaces.IVotableLayer"
+        class=".viewlets.Vote"
+        permission="starzel.votable_behavior.view_vote"
+        />
+
     <browser:page
         name="vote"
         for="starzel.votable_behavior.interfaces.IVotable"
+        layer="..interfaces.IVotableLayer"
         class=".vote.Vote"
         permission="zope2.View"
         />
@@ -27,6 +38,7 @@
     <browser:page
         name="clearvotes"
         for="starzel.votable_behavior.interfaces.IVotable"
+        layer="..interfaces.IVotableLayer"
         class=".vote.ClearVotes"
         permission="zope2.ViewManagementScreens"
         />
